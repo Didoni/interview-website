@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Simple Web Page</title>
+    <style>
+      h1 {
+        margin: 2em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Simple Web Page</h1>
+      <!-- Welcome message -->
+      <div id="messageBox" class="jumbotron">
+        You are not logged in. Please provide your credentials below.
+      </div>
+      <!-- Error message -->
+      <div id="error-message" class="alert alert-danger">Wrong username or password. Please try again.</div>
+      <!-- Sign-in form -->
+      <form id="auth-form" class="form-horizontal">
+        <div class="form-group">
+          <label for="username" class="control-label">Username</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label for="password" class="control-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default" id="auth-submit">Login</button>
+        </div>
+      </form>
+      <p><button class="btn" id="logout">Logout</button></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+ 
+  </body>
+</html>
